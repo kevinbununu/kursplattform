@@ -1,0 +1,11 @@
+{
+  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/(marketing)/checkout/page": "app/(marketing)/checkout/page.js",
+  "/(marketing)/page": "app/(marketing)/page.js",
+  "/(auth)/register/page": "app/(auth)/register/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/api/stripe/checkout/route": "app/api/stripe/checkout/route.js",
+  "/(dashboard)/billing/page": "app/(dashboard)/billing/page.js",
+  "/(dashboard)/dashboard/page": "app/(dashboard)/dashboard/page.js",
+  "/(dashboard)/settings/page": "app/(dashboard)/settings/page.js"
+}
