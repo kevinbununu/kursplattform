@@ -183,29 +183,45 @@ export function CoursePlayer({ course, activeLesson: initialLesson }: Props) {
       <main className="flex-1 overflow-y-auto bg-gray-50">
         <div className="max-w-3xl mx-auto px-8 py-10">
           {/* Lesson header */}
-          <div className="flex items-start justify-between mb-6 gap-4">
-            <h1 className="text-2xl font-bold text-gray-900">{activeLesson.title}</h1>
-            <button
-              onClick={() => markComplete(!isCompleted)}
-              disabled={marking}
-              className={cn(
-                "flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-semibold transition-colors shrink-0",
-                isCompleted
-                  ? "bg-green-100 text-green-700 hover:bg-green-200"
-                  : "bg-blue-600 text-white hover:bg-blue-700"
-              )}
-            >
-              {isCompleted ? (
-                <>
-                  <CheckCircle className="w-4 h-4" /> Abgeschlossen
-                </>
-              ) : (
-                <>
-                  <Circle className="w-4 h-4" /> Als abgeschlossen markieren
-                </>
-              )}
-            </button>
-          </div>
+         <div className="flex items-start justify-between mb-6 gap-4">
+  <h1 className="text-2xl font-bold text-gray-900">
+    {activeLesson.title}
+  </h1>
+
+  <div className="flex flex-col gap-3">
+    <button
+      onClick={() => markComplete(!isCompleted)}
+      disabled={marking}
+      className={cn(
+        "flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-semibold transition-colors shrink-0",
+        isCompleted
+          ? "bg-green-100 text-green-700 hover:bg-green-200"
+          : "bg-blue-600 text-white hover:bg-blue-700"
+      )}
+    >
+      {isCompleted ? (
+        <>
+          <CheckCircle className="w-4 h-4" /> Abgeschlossen
+        </>
+      ) : (
+        <>
+          <Circle className="w-4 h-4" /> Als abgeschlossen markieren
+        </>
+      )}
+    </button>
+
+    {percentage === 100 && (
+      <button
+        onClick={() =>
+          window.open(`/api/courses/${course.id}/certificate`, "_blank")
+        }
+        className="bg-green-600 hover:bg-green-700 text-white px-4 py-2.5 rounded-lg text-sm font-semibold"
+      >
+        🎓 Zertifikat herunterladen
+      </button>
+    )}
+  </div>
+</div>
 
           {/* Video */}
           {activeLesson.videoUrl && (

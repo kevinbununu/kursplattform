@@ -1,9 +1,14 @@
 {
   "pages": {
-    "/(marketing)/page": [
+    "/(dashboard)/courses/[courseId]/learn/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(marketing)/page.js"
+      "static/chunks/app/(dashboard)/courses/[courseId]/learn/page.js"
+    ],
+    "/(dashboard)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(dashboard)/layout.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -16,45 +21,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/(auth)/login/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(auth)/login/page.js"
-    ],
     "/(dashboard)/dashboard/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(dashboard)/dashboard/page.js"
-    ],
-    "/(dashboard)/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/layout.js"
-    ],
-    "/(dashboard)/dashboard/my-courses/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/dashboard/my-courses/page.js"
-    ],
-    "/(dashboard)/creator/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/creator/page.js"
-    ],
-    "/(dashboard)/creator/courses/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/creator/courses/page.js"
-    ],
-    "/(dashboard)/creator/courses/new/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/creator/courses/new/page.js"
-    ],
-    "/(dashboard)/creator/courses/[courseId]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/creator/courses/[courseId]/page.js"
     ],
     "/(dashboard)/courses/page": [
       "static/chunks/webpack.js",

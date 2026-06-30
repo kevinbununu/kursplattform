@@ -23,7 +23,7 @@ module.exports = require("@prisma/client");
 
 /***/ }),
 
-/***/ "../../client/components/action-async-storage.external":
+/***/ "./action-async-storage.external":
 /*!*******************************************************************************!*\
   !*** external "next/dist/client/components/action-async-storage.external.js" ***!
   \*******************************************************************************/
@@ -34,7 +34,7 @@ module.exports = require("next/dist/client/components/action-async-storage.exter
 
 /***/ }),
 
-/***/ "../../client/components/request-async-storage.external":
+/***/ "./request-async-storage.external":
 /*!********************************************************************************!*\
   !*** external "next/dist/client/components/request-async-storage.external.js" ***!
   \********************************************************************************/
@@ -45,7 +45,7 @@ module.exports = require("next/dist/client/components/request-async-storage.exte
 
 /***/ }),
 
-/***/ "../../client/components/static-generation-async-storage.external":
+/***/ "./static-generation-async-storage.external":
 /*!******************************************************************************************!*\
   !*** external "next/dist/client/components/static-generation-async-storage.external.js" ***!
   \******************************************************************************************/
@@ -389,7 +389,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/next-auth","vendor-chunks/@babel","vendor-chunks/tailwind-merge","vendor-chunks/lucide-react","vendor-chunks/@swc","vendor-chunks/clsx","vendor-chunks/jose","vendor-chunks/openid-client","vendor-chunks/bcryptjs","vendor-chunks/oauth","vendor-chunks/object-hash","vendor-chunks/preact","vendor-chunks/uuid","vendor-chunks/yallist","vendor-chunks/preact-render-to-string","vendor-chunks/lru-cache","vendor-chunks/cookie","vendor-chunks/@auth","vendor-chunks/oidc-token-hash","vendor-chunks/@panva"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2F(dashboard)%2Fdashboard%2Fpage&page=%2F(dashboard)%2Fdashboard%2Fpage&appPaths=%2F(dashboard)%2Fdashboard%2Fpage&pagePath=private-next-app-dir%2F(dashboard)%2Fdashboard%2Fpage.tsx&appDir=C%3A%5CUsers%5Ckorau%5CDownloads%5Ckursplattform%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5Ckorau%5CDownloads%5Ckursplattform&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/next-auth","vendor-chunks/jose","vendor-chunks/openid-client","vendor-chunks/bcryptjs","vendor-chunks/@babel","vendor-chunks/oauth","vendor-chunks/object-hash","vendor-chunks/preact","vendor-chunks/uuid","vendor-chunks/yallist","vendor-chunks/preact-render-to-string","vendor-chunks/lru-cache","vendor-chunks/cookie","vendor-chunks/@auth","vendor-chunks/oidc-token-hash","vendor-chunks/@panva","vendor-chunks/tailwind-merge","vendor-chunks/lucide-react","vendor-chunks/@swc","vendor-chunks/clsx"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2F(dashboard)%2Fdashboard%2Fpage&page=%2F(dashboard)%2Fdashboard%2Fpage&appPaths=%2F(dashboard)%2Fdashboard%2Fpage&pagePath=private-next-app-dir%2F(dashboard)%2Fdashboard%2Fpage.tsx&appDir=C%3A%5CUsers%5Ckorau%5CDownloads%5Ckursplattform%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5Ckorau%5CDownloads%5Ckursplattform&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();

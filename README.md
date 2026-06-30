@@ -1,5 +1,5 @@
 # Projekt-Mitglieder : 
-Kevin Wolfram , Jegor Geer 770337 , Kirill Korsun 770330 , Abbas Sharba
+Kevin Wolfram 770280 , Jegor Geer 770337 , Kirill Korsun 770330 , Abbas Sharba 770856
 
 
 
@@ -45,7 +45,7 @@ kursplattform/
 │   │   │   └── settings/      # Nutzerprofil & Abo-Verwaltung
 │   │   └── api/
 │   │       ├── auth/          # NextAuth + Registrierung
-│   │       ├── courses/       # CRUD Kurse, Module, Lektionen
+│   │       ├── courses/       # CRUD Kurse, Module, Lektionen + Zertifikat
 │   │       ├── progress/      # Lernfortschritt
 │   │       ├── stripe/        # Checkout, Webhook, Portal
 │   │       ├── analytics/     # Creator-Analytics
