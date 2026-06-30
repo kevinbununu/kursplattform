@@ -1,6 +1,14 @@
+# Projekt-Mitglieder : 
+Kevin Wolfram , Jegor Geer 770337 , Kirill Korsun 770330 , Abbas Sharba
+
+
+
+
 # LearnHub – SaaS Kursplattform
 
 > Web Engineering Projekt · Next.js 14 · PostgreSQL · Prisma · Stripe · Tailwind CSS
+
+
 
 ---
 

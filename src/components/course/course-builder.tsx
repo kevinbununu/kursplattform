@@ -24,6 +24,7 @@ interface CourseData {
   id?: string;
   title: string;
   description: string;
+  thumbnail: string;
   accessTier: string;
   level: string;
   published: boolean;
@@ -42,6 +43,7 @@ export function CourseBuilder({ course }: Props) {
   const [data, setData] = useState<CourseData>({
     title: course?.title ?? "",
     description: course?.description ?? "",
+    thumbnail: (course as any)?.thumbnail ?? "",
     accessTier: course?.accessTier ?? "FREE",
     level: course?.level ?? "BEGINNER",
     published: course?.published ?? false,
@@ -211,16 +213,31 @@ const handleSave = async (publish?: boolean) => {
                 placeholder="z.B. Python für Anfänger"
               />
             </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1.5">Beschreibung</label>
-              <textarea
-                value={data.description}
-                onChange={(e) => setData({ ...data, description: e.target.value })}
-                rows={4}
-                className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
-                placeholder="Was lernen die Teilnehmer in diesem Kurs?"
-              />
-            </div>
+           <div>
+  <label className="block text-sm font-medium text-gray-700 mb-1.5">
+    Beschreibung
+  </label>
+  <textarea
+    value={data.description}
+    onChange={(e) => setData({ ...data, description: e.target.value })}
+    rows={4}
+    className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+    placeholder="Was lernen die Teilnehmer in diesem Kurs?"
+  />
+</div>
+
+<div>
+  <label className="block text-sm font-medium text-gray-700 mb-1.5">
+    Thumbnail URL
+  </label>
+  <input
+    type="url"
+    value={data.thumbnail}
+    onChange={(e) => setData({ ...data, thumbnail: e.target.value })}
+    className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+    placeholder="https://beispiel.de/bild.jpg"
+  />
+</div>
           </div>
         </div>
 

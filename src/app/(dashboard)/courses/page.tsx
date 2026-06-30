@@ -73,18 +73,27 @@ export default async function CoursesPage() {
                 hasAccess ? "border-gray-100" : "border-gray-100 opacity-80"
               )}
             >
-              {/* Thumbnail */}
-              <div className="aspect-video bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center relative">
-                <BookOpen className="w-12 h-12 text-blue-300" />
-                {!hasAccess && (
-                  <div className="absolute inset-0 bg-gray-900/40 flex items-center justify-center">
-                    <div className="text-center text-white">
-                      <Lock className="w-6 h-6 mx-auto mb-1" />
-                      <p className="text-xs font-medium">{TIER_LABELS[course.accessTier]} erforderlich</p>
+             {/* Thumbnail */}
+          <div className="aspect-video bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center relative overflow-hidden">
+          {course.thumbnail ? (
+           <img
+            src={course.thumbnail}
+           alt={course.title}
+           className="w-full h-full object-cover"
+             />
+             ) : (
+               <BookOpen className="w-12 h-12 text-blue-300" />
+              )}
+
+          {!hasAccess && (
+           <div className="absolute inset-0 bg-gray-900/40 flex items-center justify-center">
+         <div className="text-center text-white">
+                     <Lock className="w-6 h-6 mx-auto mb-1" />
+                    <p className="text-xs font-medium">{TIER_LABELS[course.accessTier]} erforderlich</p>
                     </div>
                   </div>
                 )}
-              </div>
+                </div>
 
               <div className="p-5">
                 <div className="flex items-start gap-2 mb-3">
